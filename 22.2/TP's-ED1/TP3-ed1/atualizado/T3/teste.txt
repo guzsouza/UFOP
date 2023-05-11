@@ -1,0 +1,12 @@
+prog.doc algoritmo selecao
+aeds1.doc algoritmo estrutura dados
+darwin.doc selecao natural
+B algoritmo selecao
+
+//////////////////////////////
+
+igual = busca(algoritmo) // retorna: prog.doc aeds1.doc
+
+for (n vezes)
+    aux = busca(selecao) // retorna: prog.doc darwin.doc
+    igual = cmp(igual, aux)

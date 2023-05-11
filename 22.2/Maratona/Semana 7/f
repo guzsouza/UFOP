@@ -1,0 +1,37 @@
+if (line[index] == 'S'){
+                for (int search = index + 1; search < tamanho; search++){
+                    if (line[search] == 'B' && (((index + search) % 2) != 0)){
+                        line[index] = 'x';
+                        line[search] = 'x';
+                        conections++;
+                        break;
+                    }
+                }
+            } else if (line[index] == 'C'){
+                for (int search = index + 1; search < tamanho; search++){
+                    if (line[search] == 'F' && (((index + search) % 2) != 0)){
+                        line[index] = 'x';
+                        line[search] = 'x';
+                        conections++;
+                        break;
+                    }
+                }
+            } else if (line[index] == 'F'){
+                for (int search = index + 1; search < tamanho; search++){
+                    if (line[search] == 'C' && (((index + search) % 2) != 0)){
+                        line[index] = 'x';
+                        line[search] = 'x';
+                        conections++;
+                        break;
+                    }
+                }
+            } else if (line[index] == 'B'){
+                for (int search = index + 1; search < tamanho; search++){
+                    if (line[search] == 'S' && (((index + search) % 2) != 0)){
+                        line[index] = 'x';
+                        line[search] = 'x';
+                        conections++;
+                        break;
+                    }
+                }
+            }

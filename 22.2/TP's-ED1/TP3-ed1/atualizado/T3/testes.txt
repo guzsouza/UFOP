@@ -1,0 +1,17 @@
+algoritmo   prog.doc alg.doc
+código   ed1.doc prog.doc
+
+
+pesquisa 1 (algoritmo): prog.doc alg.doc
+pesquisa 2 (código): ed1.doc prog.doc
+
+ed1.doc é igual a prog.doc ? não
+ed1.doc é igual a alg.doc ? não
+então corta ed1
+
+prog.doc é igual a prog.doc ? sim
+então mantém prog.doc
+
+também tem que cortar alg.doc, pois não está presente na segunda pesquisa
+
+resultado: prog.doc

@@ -1,0 +1,113 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_TAM 10000
+
+int main(){
+    char Total_Str[MAX_TAM];
+    
+     
+
+    while(scanf("%s", Total_Str) != EOF){
+        
+            if (strcmp(Total_Str, "brasil") == 0){ 
+                printf("Feliz Natal!\n");
+                
+            }
+            else if (strcmp(Total_Str, "alemanha") == 0) {
+                printf("Frohliche Weihnachten!\n");
+                
+            }
+            else if (strcmp(Total_Str, "austria") == 0) {
+                printf("Frohe Weihnacht!\n");
+                
+            }
+            else if (strcmp(Total_Str, "coreia") == 0) {
+                printf("Chuk Sung Tan!\n");
+                
+            }
+            else if (strcmp(Total_Str, "espanha") == 0) {
+                printf("Feliz Navidad!\n");
+                
+            }
+            else if (strcmp(Total_Str, "grecia") == 0) {
+                printf("Kala Christougena!\n");
+                
+            }
+            else if (strcmp(Total_Str, "estados-unidos") == 0) {
+                printf("Merry Christmas!\n");
+                
+            }
+            else if (strcmp(Total_Str, "inglaterra") == 0) {
+                printf("Merry Christmas!\n");
+                
+            }
+            else if (strcmp(Total_Str, "australia") == 0) {
+                printf("Merry Christmas!\n");
+                
+            }
+            else if (strcmp(Total_Str, "portugal") == 0) {
+                printf("Feliz Natal!\n");
+                
+            }
+            else if (strcmp(Total_Str, "suecia") == 0) {
+                printf("God Jul!\n");
+                
+            }
+            else if (strcmp(Total_Str, "turquia") == 0) {
+                printf("Mutlu Noeller\n");
+                
+            }
+            else if (strcmp(Total_Str, "argentina") == 0) {
+                printf("Feliz Navidad!\n");
+                
+            }
+            else if (strcmp(Total_Str, "chile") == 0) {
+                printf("Feliz Navidad!\n");
+                
+            }
+            else if (strcmp(Total_Str, "mexico") == 0) {
+                printf("Feliz Navidad!\n");
+                
+            }
+            else if (strcmp(Total_Str, "antardida") == 0) {
+                printf("Merry Christmas!\n");
+                
+            }
+            else if (strcmp(Total_Str, "canada") == 0) {
+                printf("Merry Christmas!\n");
+                
+            }
+            else if (strcmp(Total_Str, "irlanda") == 0) {
+                printf("Nollaig Shona Dhuit!\n");
+                
+            }
+            else if (strcmp(Total_Str, "belgica") == 0) {
+                printf("Zalig Kerstfeest!\n");
+                
+            }
+            else if (strcmp(Total_Str, "italia") == 0) {
+                printf("Buon Natale!\n");
+                
+            }
+            else if (strcmp(Total_Str, "libia") == 0) {
+                printf("Buon Natale!\n");
+                
+            }
+            else if (strcmp(Total_Str, "siria") == 0) {
+                printf("Milad Mubarak!\n");
+                
+            }
+            else if (strcmp(Total_Str, "marrocos") == 0) {
+                printf("Milad Mubarak!\n");
+                
+            }
+            else if (strcmp(Total_Str, "japao") == 0) {
+                printf("Merii Kurisumasu!\n");
+                
+            }
+        else printf("--- NOT FOUND ---\n");    
+    }
+    return 1;
+}

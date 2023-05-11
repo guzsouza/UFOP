@@ -1,0 +1,9 @@
+gcc main.c -c
+gcc lista.c -c
+gcc -g -o main.o lista.o *.c programa -Wall
+valgrind --leak-check=yes -s ./programa <
+
+gcc main.c -c
+gcc recursividade.c -c
+gcc main.o recursividade.o -o programa -Wall
+./programa <teste.txt
