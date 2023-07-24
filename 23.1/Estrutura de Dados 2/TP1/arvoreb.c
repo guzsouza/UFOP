@@ -174,3 +174,16 @@ void Insere(Item Reg, TipoApontador *Ap, int *comp) {
     }
     //Todos os passos acima acontecem caso seja preciso criar uma nova raiz
 }
+
+void Caminhamento(TipoApontador ApArvore){
+    int i = 0;
+    if (ApArvore == NULL)
+        return;
+
+    while(i != ApArvore->n + 1){
+        Caminhamento(ApArvore->p[i]);
+        if(i != ApArvore->n)
+            printf("%d\n", ApArvore->r[i].chave);
+        i++;
+    }
+}
