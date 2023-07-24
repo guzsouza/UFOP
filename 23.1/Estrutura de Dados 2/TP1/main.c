@@ -86,6 +86,7 @@ int main(int argc, char **argv)
         //Inicialização
         TipoApontador Arvoreb = Inicializa();
 
+
         //Inserção
         clock_t startI = clock();
         for (int i = 0; i < qtdRegistros; i++){
@@ -103,7 +104,7 @@ int main(int argc, char **argv)
         analise.insercaoComp = comp;
 
         comp = 0;   //Reinicia a variável comp
-        
+        TipoApontador x = Arvoreb;
         clock_t startP = clock();
         //Pesquisa
         Pesquisa(&itemProcurado, Arvoreb, &comp);    
@@ -122,9 +123,11 @@ int main(int argc, char **argv)
         analise.pesquisaTemp = (endP - startP); //Tempo de pesquisa
         analise.pesquisaTransf = 0; //Por padrao, sempre 0
 
-        printf("\n**********************\n\nDADOS DE ANALISE:\n\n");
-        printf("INSERCAO\nTempo: %lf\nComparacoes: %d\nTransferencias: %d\n\n",analise.insercaoTemp, analise.insercaoComp, analise.insercaoTransf);
-        printf("PESQUISA\nTempo: %lf\nComparacoes: %d\nTransferencias: %d\n\n", analise.pesquisaTemp, analise.pesquisaComp, analise.pesquisaTransf);
+        // printf("\n**********************\n\nDADOS DE ANALISE:\n\n");
+        // printf("INSERCAO\nTempo: %lf\nComparacoes: %d\nTransferencias: %d\n\n",analise.insercaoTemp, analise.insercaoComp, analise.insercaoTransf);
+        // printf("PESQUISA\nTempo: %lf\nComparacoes: %d\nTransferencias: %d\n\n", analise.pesquisaTemp, analise.pesquisaComp, analise.pesquisaTransf);
+        Caminhamento(x);
+        
         free(Arvoreb);
     }
     //*******************************************************************  ARVORE B*   *****************************************************************
